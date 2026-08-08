@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Roze Logistics | Reliable Freight Solutions</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --accent: #3b82f6;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #1f2937;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 1.5rem; }
+        nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: var(--accent); }
+        .hero { padding: 6rem 2rem; text-align: center; max-width: 900px; margin: 0 auto; }
+        .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1.5rem; letter-spacing: -0.5px; }
+        .hero h1 span { color: var(--accent); }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; }
+        .cta-buttons { display: flex; gap: 1rem; justify-content: center; }
+        .btn { padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+        .btn-primary { background: var(--accent); color: white; }
+        .btn-primary:hover { background: #2563eb; }
+        .btn-secondary { background: transparent; color: var(--text-main); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: var(--card-bg); }
+        .trust-banner { background: var(--card-bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 2rem; display: flex; justify-content: space-around; text-align: center; margin-top: 4rem; }
+        .trust-item h3 { font-size: 1.5rem; color: var(--accent); margin-bottom: 0.25rem; }
+        .trust-item p { color: var(--text-muted); font-size: 0.9rem; }
+        footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 4rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Black Roze <span>Logistics</span></div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="shippers.html">Shippers</a>
+            <a href="carriers.html">Carriers</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Precision Execution in <span>Freight & Logistics</span></h1>
+        <p>Connecting high-demand industrial lanes with fully vetted, reliable motor carriers. Built on transparent communication, zero surprises, and unwavering accountability.</p>
+        <div class="cta-buttons">
+            <a href="shippers.html" class="btn btn-primary">Request a Quote</a>
+            <a href="carriers.html" class="btn btn-secondary">Carrier Onboarding</a>
+        </div>
+    </section>
+
+    <div class="trust-banner">
+        <div class="trust-item">
+            <h3>100%</h3>
+            <p>Vetted Carrier Network</p>
+        </div>
+        <div class="trust-item">
+            <h3>$75k</h3>
+            <p>Active Surety Bond (BMC-84)</p>
+        </div>
+        <div class="trust-item">
+            <h3>24/7</h3>
+            <p>Dedicated Tracking & Support</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Black Roze Logistics. All rights reserved. | MC & USDOT Setup Active</p>
+    </footer>
+</body>
+</html>

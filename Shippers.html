@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Shippers | Black Roze Logistics</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --accent: #3b82f6;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #1f2937;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 1.5rem; }
+        nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: var(--accent); }
+        .container { max-width: 700px; margin: 3rem auto; padding: 0 2rem; }
+        .page-title { text-align: center; margin-bottom: 2rem; }
+        .page-title h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .page-title p { color: var(--text-muted); font-size: 1rem; }
+        form { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        label { font-size: 0.9rem; font-weight: 600; color: var(--text-muted); }
+        input, select, textarea { background: var(--bg-color); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; color: var(--text-main); font-size: 1rem; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
+        button { background: var(--accent); color: white; border: none; padding: 0.85rem; border-radius: 6px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: background 0.2s; margin-top: 1rem; }
+        button:hover { background: #2563eb; }
+        footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 4rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Black Roze <span>Logistics</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="shippers.html" class="active">Shippers</a>
+            <a href="carriers.html">Carriers</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-title">
+            <h1>Request a Freight Quote</h1>
+            <p>Submit your load specifications below for a rapid response and reliable spot capacity.</p>
+        </div>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" required placeholder="Your Business Name">
+            </div>
+            <div class="form-group">
+                <label for="origin">Origin (City, State, or Zip)</label>
+                <input type="text" id="origin" name="origin" required placeholder="e.g., Jacksonville, FL">
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination (City, State, or Zip)</label>
+                <input type="text" id="destination" name="destination" required placeholder="e.g., Atlanta, GA">
+            </div>
+            <div class="form-group">
+                <label for="equipment">Equipment Type</label>
+                <select id="equipment" name="equipment">
+                    <option value="dry-van">Dry Van Truckload</option>
+                    <option value="drayage">Port Drayage / Intermodal</option>
+                    <option value="other">Specialized / Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="weight">Commodity & Estimated Weight</label>
+                <input type="text" id="weight" name="weight" placeholder="e.g., Consumer Goods, 38,000 lbs">
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Email or Phone</label>
+                <input type="text" id="contact" name="contact" required placeholder="name@company.com or phone">
+            </div>
+            <button type="submit">Submit Quote Request</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Black Roze Logistics. All rights reserved.</p>
+    </footer>
+</body>
+</html>

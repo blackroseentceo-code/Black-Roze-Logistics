@@ -35,28 +35,16 @@
         .trust-item h3 { font-size: 1.5rem; color: var(--accent); margin-bottom: 0.25rem; }
         .trust-item p { color: var(--text-muted); font-size: 0.9rem; }
         footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 4rem; }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">Black Roze <span>Logistics</span></div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="services.html">Services</a>
-            <a href="shippers.html">Shippers</a>
-            <a href="carriers.html">Carriers</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h1>Precision Execution in <span>Freight & Logistics</span></h1>
-        <p>Connecting high-demand industrial lanes with fully vetted, reliable motor carriers. Built on transparent communication, zero surprises, and unwavering accountability.</p>
-        <div class="cta-buttons">
-            <a href="shippers.html" class="btn btn-primary">Request a Quote</a>
-            <a href="carriers.html" class="btn btn-secondary">Carrier Onboarding</a>
-        </div>
-    </section>
-
+<header>
+    <div class="logo">Black Roze <span>Logistics</span></div>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="shippers.html">Shippers</a>
+        <a href="quote.html">Quote</a>
+        <a href="carriers.html">Carriers</a>
+    </nav>
+</header>
     <div class="trust-banner">
         <div class="trust-item">
             <h3>100%</h3>
@@ -71,16 +59,13 @@
             <p>Dedicated Tracking & Support</p>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2026 Black Roze Logistics. All rights reserved. | MC & USDOT Setup Active</p>
     </footer>
 </body>
 </html>
 ```[cite: 1]
-
 ---
-
 ### 2. Quote Page (`quote.html`)
 ```html
 <!DOCTYPE html>
@@ -99,7 +84,13 @@
             --border: #1f2937;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+       body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
         header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
         .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; }
         .logo span { color: var(--accent); }
@@ -128,7 +119,6 @@
             <a href="carriers.html">Carriers</a>
         </nav>
     </header>
-
     <div class="container">
         <h1>Request a Freight Quote</h1>
         <p>Fill out the details below to secure competitive pricing for your upcoming shipments.</p>
@@ -170,7 +160,6 @@
             <button type="submit">Submit Quote Request</button>
         </form>
     </div>
-
     <footer>
         <p>&copy; 2026 Black Roze Logistics. All rights reserved. | MC & USDOT Setup Active</p>
     </footer>

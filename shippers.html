@@ -31,32 +31,33 @@
         .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; background: var(--accent); color: white; transition: background 0.2s; margin-top: 1rem; }
         .btn:hover { background: #2563eb; }
         footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 4rem; }
+        @media(max-width: 768px) { .feature-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
     <header>
+        <div class="logo">Black Roze <span>Logistics</span></div>
         <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="shippers.html">Shippers</a>
-    <a href="quote.html">Quote</a>
-    <a href="carriers.html">Carriers</a>
-</nav>
-                <a href="carriers.html">Carriers</a>
-            </nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="shippers.html" class="active">Shippers</a>
+            <a href="quote.html">Quote</a>
+            <a href="carriers.html">Carriers</a>
         </nav>
     </header>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="shippers.html" class="active">Shippers</a>
-    <a href="carriers.html">Carriers</a>
-</nav>
-                <p>Access high-demand dry van, reefer, flatbed, and partial/LTL capacity backed by active surety bonding and rigorous compliance checks.</p>
+
+    <div class="container">
+        <h1>Solutions for <span>Shippers</span></h1>
+        <p>Access high-demand dry van, reefer, flatbed, and partial/LTL capacity backed by active surety bonding and rigorous compliance checks.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3>Vetted Network</h3>
+                <p>Strict carrier onboarding and active authority verification to protect your freight every mile of the way.</p>
             </div>
             <div class="feature-box">
-                <h3>Transparent Communication</h3>
-                <p>Enjoy direct operational oversight, milestone tracking reports, and dedicated support from dispatch to final delivery.</p>
+                <h3>Dedicated Support</h3>
+                <p>Direct operational oversight, proactive communication, and real-time shipment updates from pickup to delivery.</p>
             </div>
         </div>
 

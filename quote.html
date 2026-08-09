@@ -14,7 +14,13 @@
             --border: #1f2937;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
         header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
         .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; }
         .logo span { color: var(--accent); }
@@ -22,7 +28,7 @@
         nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
         nav a:hover, nav a.active { color: var(--accent); }
         .container { max-width: 700px; margin: 4rem auto; background: var(--card-bg); border: 1px solid var(--border); padding: 2.5rem; border-radius: 8px; }
-        h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5r em; }
+        h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
         p { color: var(--text-muted); margin-bottom: 2rem; }
         .form-group { margin-bottom: 1.25rem; }
         label { display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.95rem; }
@@ -40,6 +46,7 @@
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="shippers.html">Shippers</a>
+            <a href="quote.html" class="active">Quote</a>
             <a href="carriers.html">Carriers</a>
         </nav>
     </header>

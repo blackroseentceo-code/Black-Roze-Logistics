@@ -13,35 +13,110 @@
             --text-muted: #9ca3af;
             --border: #1f2937;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
-        header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; }
-        .logo span { color: var(--accent); }
-        nav { display: flex; gap: 1.5rem; }
-        nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
-        nav a:hover, nav a.active { color: var(--accent); }
-        .container { max-width: 1000px; margin: 4rem auto; padding: 0 2rem; }
-        .page-title { text-align: center; margin-bottom: 3rem; }
-        .page-title h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
-        .page-title p { color: var(--text-muted); font-size: 1.1rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; }
-        .card h3 { font-size: 1.25rem; color: var(--accent); margin-bottom: 1rem; }
-        .card p { color: var(--text-muted); font-size: 0.95rem; }
-        footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 4rem; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            text-transform: uppercase;
+        }
+        .logo span {
+            color: var(--accent);
+        }
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover,
+        nav a.active {
+            color: var(--accent);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+        .page-title p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 4rem;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">Black Roze <span>Logistics</span></div>
-      <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html" class="active">Services</a>
-    <a href="shippers.html">Shippers</a>
-    <a href="quote.html">Quote</a>
-    <a href="carriers.html">Carriers</a>
-</nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="shippers.html">Shippers</a>
+            <a href="quote.html">Quote</a>
+            <a href="carriers.html">Carriers</a>
+        </nav>
     </header>
 
     <div class="container">
@@ -56,12 +131,16 @@
                 <p>The backbone of domestic freight. Reliable, secure transportation for standard palletized goods, consumer items, and paper products across major regional lanes.</p>
             </div>
             <div class="card">
-                <h3>Port Drayage & Intermodal</h3>
+                <h3>Port Drayage &amp; Intermodal</h3>
                 <p>Seamless container coordination moving between major marine terminals (including JAXPORT) and local distribution hubs. Managed with strict compliance and verified chassis mapping.</p>
             </div>
             <div class="card">
                 <h3>Regional Dedicated Loops</h3>
                 <p>Specialized outbound-inbound pairing designed to eliminate deadhead mileage, secure consistent capacity, and protect your long-term shipping budget stability.</p>
+            </div>
+            <div class="card">
+                <h3>Healthcare &amp; Medical Freight</h3>
+                <p>Time-critical supply chain solutions for hospital networks, clinical consumables, PPE, and non-hazardous medical restock with clean-spec transport and strict chain-of-custody protocols.</p>
             </div>
         </div>
     </div>

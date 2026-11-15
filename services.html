@@ -123,10 +123,28 @@
         /* Footer */
         footer {
             text-align: center;
-            padding: 2rem;
+            padding: 3rem 1.5rem;
             font-size: 0.85rem;
-            color: #64748b;
+            color: #9ca3af;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #3b82f6;
         }
 
         /* Responsive Design */
@@ -203,7 +221,14 @@
     </main>
 
     <footer>
-        &copy; 2026 Black Roze Logistics. All rights reserved.
+        <div class="footer-links">
+            <a href="aboutus.html">About Us</a>
+            <a href="authority.html">Authority &amp; Compliance</a>
+            <a href="faqpage.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p>&copy; 2026 Black Roze Logistics LLC. All rights reserved. | MC &amp; USDOT Setup Active</p>
     </footer>
 
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Black Roze Logistics</title>
+    <title>FAQ | Black Roze Logistics</title>
     <style>
         :root {
             --bg-color: #0b0f19;
@@ -16,56 +16,82 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
         body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
         header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; }
+        .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; text-decoration: none; }
         .logo span { color: var(--accent); }
         nav { display: flex; gap: 1.5rem; }
         nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
         nav a:hover, nav a.active { color: var(--accent); }
-        .container { max-width: 800px; margin: 4rem auto; background: var(--card-bg); border: 1px solid var(--border); padding: 3rem; border-radius: 8px; }
-        h1 { font-size: 2rem; font-weight: 800; margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
-        .faq-item { margin-bottom: 2rem; }
-        .faq-item h3 { color: var(--text-main); font-size: 1.15rem; margin-bottom: 0.5rem; }
-        .faq-item p { color: var(--text-muted); }
-        footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 4rem; }
+        .container { max-width: 900px; margin: 4rem auto; padding: 0 2rem; }
+        .page-title { text-align: center; margin-bottom: 3rem; }
+        .page-title h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .page-title p { color: var(--text-muted); font-size: 1.1rem; }
+        .faq-item { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.75rem 2rem; margin-bottom: 1.25rem; }
+        .faq-item h2 { color: var(--accent); font-size: 1.15rem; margin-bottom: 0.6rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+        footer { text-align: center; padding: 3rem 1.5rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 4rem; }
+        .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--accent); }
+        @media (max-width: 640px) {
+            header { flex-direction: column; gap: 1rem; }
+            nav { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+            .page-title h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Black Roze <span>Logistics</span></div>
+        <a href="index.html" class="logo">Black Roze <span>Logistics</span></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="shippers.html">Shippers</a>
+            <a href="quote.html">Quote</a>
             <a href="carriers.html">Carriers</a>
         </nav>
     </header>
 
     <div class="container">
-        <h1>Frequently Asked Questions</h1>
-
-        <div class="faq-item">
-            <h3>For Shippers: How do I track active freight?</h3>
-            <p>Once a load is dispatched, you will receive real-time visibility milestone updates and direct status lines from our operations management team.</p>
+        <div class="page-title">
+            <h1>Frequently Asked Questions</h1>
+            <p>Answers for shippers and motor carriers partnering with Black Roze Logistics.</p>
         </div>
 
         <div class="faq-item">
-            <h3>For Shippers: What equipment categories do you support?</h3>
-            <p>We manage nationwide networks encompassing Dry Vans, Reefers, Flatbeds, and specialized partial/LTL shipping configurations.</p>
+            <h2>What types of freight does Black Roze Logistics handle?</h2>
+            <p>We specialize in Dry Van Truckload (TL), Port Drayage &amp; Intermodal container moves (including JAXPORT terminals), Regional Dedicated Loops, and Healthcare &amp; Medical non-hazardous freight.</p>
         </div>
 
         <div class="faq-item">
-            <h3>For Carriers: What is required for onboarding approval?</h3>
-            <p>Motor carriers must provide active MC/DOT authority verification, a completed W-9 form, and a valid certificate of insurance meeting our standard cargo and auto liability minimums.</p>
+            <h2>How do you vet motor carriers before tendering a load?</h2>
+            <p>Every carrier undergoes authority, safety, and insurance verification. We require active FMCSA operating authority, a Satisfactory or clean Unrated safety profile, an executed Broker-Carrier Agreement, and a Certificate of Insurance ($100,000 Cargo / $1,000,000 Auto Liability) sent directly from the insurance producer with Black Roze Logistics LLC listed as Certificate Holder.</p>
         </div>
 
         <div class="faq-item">
-            <h3>For Carriers: Do you provide quick pay structures?</h3>
-            <p>Yes, quick pay options are available upon clean document submission, including signed bills of lading (BOLs) and rate confirmations.</p>
+            <h2>Do you coordinate port drayage at JAXPORT?</h2>
+            <p>Yes. We manage container drayage between JAXPORT terminals and regional distribution centers, working exclusively with UIIA-interchange approved carriers and TWIC-credentialed drivers.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>How do carriers get onboarded and paid?</h2>
+            <p>Carriers can email dispatch@blackrozelogistics.com with their MC/DOT number to receive our digital onboarding packet. Once your W-9, COI, Broker-Carrier Agreement, and ACH or Factoring Notice of Assignment (NOA) are approved, you are cleared for dispatch.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>How quickly can I receive a freight quote?</h2>
+            <p>Submit your origin, destination, equipment type, and shipment details on our <a href="quote.html" style="color: #3b82f6; text-decoration: none;">Quote page</a>, and our operations desk will respond promptly with current lane pricing.</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Black Roze Logistics. All rights reserved. | MC & USDOT Setup Active</p>
+        <div class="footer-links">
+            <a href="aboutus.html">About Us</a>
+            <a href="authority.html">Authority &amp; Compliance</a>
+            <a href="faqpage.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p>&copy; 2026 Black Roze Logistics LLC. All rights reserved. | MC &amp; USDOT Setup Active</p>
     </footer>
 </body>
 </html>

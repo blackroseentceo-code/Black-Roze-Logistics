@@ -29,7 +29,7 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .brand {
+        .brand { display: inline-flex; align-items: center; line-height: 0;
             font-size: 1.25rem;
             font-weight: 800;
             letter-spacing: 0.05em;
@@ -37,7 +37,7 @@
             text-decoration: none;
         }
 
-        .brand span {
+        .brand img { height: 48px; width: auto; display: block; }
             color: #3b82f6;
         }
 
@@ -177,7 +177,7 @@
 <body>
 
     <header>
-        <a href="index.html" class="brand">BLACK ROZE <span>LOGISTICS</span></a>
+        <a href="index.html" class="brand" aria-label="Black Roze Logistics — Home"><img src="black-roze-logo-header.png" alt="Black Roze Logistics" height="48"></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="services.html" class="active">Services</a>

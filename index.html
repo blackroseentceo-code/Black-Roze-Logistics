@@ -1,65 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Roze Logistics | Precision Freight &amp; Supply Chain Solutions</title>
-    <style>
-        :root {
-            --bg-color: #0b0f19;
-            --card-bg: #111827;
-            --accent: #3b82f6;
-            --text-main: #f3f4f6;
-            --text-muted: #9ca3af;
-            --border: #1f2937;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
-        header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .logo { display: inline-flex; align-items: center; text-decoration: none; line-height: 0; }
-        .logo img { height: 48px; width: auto; display: block; }
-        
-        nav { display: flex; gap: 1.5rem; }
-        nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
-        nav a:hover, nav a.active { color: var(--accent); }
-        .hero { max-width: 1000px; margin: 5rem auto 4rem; padding: 0 2rem; text-align: center; }
-        .hero h1 { font-size: 3rem; font-weight: 800; line-height: 1.2; margin-bottom: 1.25rem; }
-        .hero h1 span { color: var(--accent); }
-        .hero p { color: var(--text-muted); font-size: 1.15rem; max-width: 680px; margin: 0 auto 2.25rem; }
-        .cta-group { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-        .btn-primary { background: var(--accent); color: white; padding: 0.85rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background 0.2s; }
-        .btn-primary:hover { background: #2563eb; }
-        .btn-secondary { background: var(--card-bg); color: var(--text-main); border: 1px solid var(--border); padding: 0.85rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: border-color 0.2s; }
-        .btn-secondary:hover { border-color: var(--accent); }
-        .highlights { max-width: 1100px; margin: 0 auto 4rem; padding: 0 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-        .highlight-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; }
-        .highlight-card h2 { color: var(--accent); font-size: 1.2rem; margin-bottom: 0.65rem; }
-        .highlight-card p { color: var(--text-muted); font-size: 0.95rem; }
-        footer { text-align: center; padding: 3rem 1.5rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 4rem; }
-        .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
-        .footer-links a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
-        .footer-links a:hover { color: var(--accent); }
-        @media (max-width: 768px) {
-            header { flex-direction: column; gap: 1rem; }
-            nav { gap: 1rem; flex-wrap: wrap; justify-content: center; }
-            .hero h1 { font-size: 2.2rem; }
-            .highlights { grid-template-columns: 1fr; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Roze Logistics | Precision Freight &amp; Supply Chain Solutions</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0f19;color:#f3f4f6}
+header{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;border-bottom:1px solid #1f2937;flex-wrap:wrap;gap:16px}
+nav a{color:#f3f4f6;text-decoration:none;margin-left:24px;font-weight:600}
+nav a.active{color:#3b82f6}
+nav a:hover{color:#3b82f6}
+main{max-width:1000px;margin:0 auto;padding:48px 24px}
+h1{font-size:40px;line-height:1.2}
+h1 .blue{color:#3b82f6}
+h2{margin-top:40px}
+p,li{line-height:1.6}
+.muted{color:#9ca3af}
+.card{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:24px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.btn{display:inline-block;background:#3b82f6;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px 12px 8px 0}
+.btn:hover{background:#2563eb}
+.btn-secondary{background:transparent;border:1px solid #3b82f6;color:#3b82f6}
+footer{border-top:1px solid #1f2937;padding:32px;margin-top:48px;color:#9ca3af}
+footer a{color:#9ca3af;margin-right:16px;text-decoration:none;line-height:2}
+footer a:hover{color:#3b82f6}
+</style>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo" aria-label="Black Roze Logistics — Home"><img src="black-roze-logo-header.png" alt="Black Roze Logistics" height="48"></a>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="services.html">Services</a>
-            <a href="shippers.html">Shippers</a>
-            <a href="quote.html">Quote</a>
-            <a href="carriers.html">Carriers</a>
-        </nav>
-    </header>
+<header>
+<a href="index.html"><img src="black-roze-logo-header.png" alt="Black Roze Logistics" style="height:48px;width:auto;"></a>
+<nav>
+<a href="index.html" class="active">Home</a>
+<a href="services.html">Services</a>
+<a href="shippers.html">Shippers</a>
+<a href="quote.html">Quote</a>
+<a href="carriers.html">Carriers</a>
+</nav>
+</header>
+<main>
+<h1>Disciplined Freight Capacity for <span class="blue">Modern Supply Chains</span></h1>
+<p>Headquartered in Jacksonville, FL, Black Roze Logistics connects commercial shippers with vetted motor carriers across Dry Van, JAXPORT Drayage, Regional Dedicated Loops, and Healthcare Freight.</p>
+<p>
+<a class="btn" href="quote.html">Get a Quote</a>
+<a class="btn btn-secondary" href="shippers.html">Become a Shipper</a>
+<a class="btn btn-secondary" href="carriers.html">Partner as a Carrier</a>
+</p>
 
+<h2>What We Move</h2>
+<div class="grid">
+<div class="card">
+<h3>Dry Van</h3>
+<p class="muted">Reliable capacity for general freight, consumer goods, and retail distribution. Ideal for consistent, time-sensitive lanes.</p>
+</div>
+<div class="card">
+<h3>JAXPORT Drayage</h3>
+<p class="muted">Port container pickup and delivery at JAXPORT, with local expertise in port scheduling, chassis, and appointment coordination.</p>
+</div>
+<div class="card">
+<h3>Regional Dedicated Loops</h3>
+<p class="muted">Specialized outbound-inbound pairing designed to eliminate deadhead mileage, secure consistent capacity, and protect your long-term shipping budget stability.</p>
+</div>
+<div class="card">
+<h3>Healthcare Freight</h3>
+<p class="muted">Time-critical supply chain solutions for hospital networks, clinical consumables, PPE, and non-hazardous medical restock with clean-spec transport and strict chain-of-custody protocols.</p>
+</div>
+</div>
+<p><a class="btn btn-secondary" href="services.html">See All Services</a></p>
 
-    <section class="hero">
-        <h1>Disciplined Freight Capacity for <span>Modern Supply Chains</span></h1>
-        <p>Headquartered in Jacksonville, FL, Black Roze Logistics connects commercial shippers with vetted motor carriers across Dry Van, JAXPORT D
+<h2>About Black Roze Logistics</h2>
+<div class="card">
+<p>Black Roze Logistics is a freight brokerage built on discipline, transparency, and dependable execution. Headquartered in Jacksonville, Florida, we connect commercial shippers with vetted motor carriers across the Southeast and nationwide.</p>
+<p>Our background spans vessel agency operations, international import logistics, and personnel/fleet coordination — giving us firsthand insight into how costly port delays, missed appointments, and unvetted capacity can be. We apply that same maritime-grade precision to every load we manage.</p>
+<p><a href="aboutus.html">Learn more about us &rarr;</a></p>
+</div>
+
+<h2>Start With One Load</h2>
+<p>New shipper? Start with one trial load, tracked from pickup to signed proof of delivery. New carrier? Send your packet and get set up in our system.</p>
+<p>
+<a class="btn" href="shippers.html">Ship With Us</a>
+<a class="btn btn-secondary" href="carriers.html">Haul With Us</a>
+</p>
+</main>
+<footer>
+<p><strong style="color:#f3f4f6;">Black Roze Logistics LLC</strong> — Precision freight brokerage rooted in maritime, port, and regional supply chain operations. Headquartered in Jacksonville, FL, connecting commercial shippers with vetted motor carriers across Dry Van, JAXPORT Drayage, Regional Dedicated Loops, and Healthcare Freight.</p>
+<p>
+<a href="aboutus.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="shippers.html">Shippers</a>
+<a href="carriers.html">Carriers</a>
+<a href="quote.html">Get a Quote</a>
+<a href="authority.html">Authority &amp; Compliance</a>
+<a href="faqpage.html">FAQ</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy Policy</a>
+</p>
+<p>Contact: Justin Starr — <a href="mailto:JustinStarr@blackrozelogistics.com">JustinStarr@blackrozelogistics.com</a> — <a href="tel:9042711906">904-271-1906</a><br>
+9138 Smoke Tree Drive, Jacksonville, FL 32244</p>
+<p>Broker authority in activation — no loads brokered until authority is active.</p>
+<p>&copy; 2026 Black Roze Logistics LLC. All rights reserved.</p>
+</footer>
+</body>
+</html>

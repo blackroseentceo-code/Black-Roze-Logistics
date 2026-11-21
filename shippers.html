@@ -16,8 +16,9 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
         body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
         header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; text-decoration: none; }
-        .logo span { color: var(--accent); }
+        .logo { display: inline-flex; align-items: center; text-decoration: none; line-height: 0; }
+        .logo img { height: 48px; width: auto; display: block; }
+        
         nav { display: flex; gap: 1.5rem; }
         nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
         nav a:hover, nav a.active { color: var(--accent); }
@@ -48,7 +49,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">Black Roze <span>Logistics</span></a>
+        <a href="index.html" class="logo" aria-label="Black Roze Logistics — Home"><img src="black-roze-logo-header.png" alt="Black Roze Logistics" height="48"></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -58,47 +59,9 @@
         </nav>
     </header>
 
+
     <div class="container">
         <div class="page-title">
             <h1>Ship With Confidence</h1>
             <p>Disciplined capacity sourcing, rigorous carrier vetting, and transparent communication from pickup to proof of delivery.</p>
         </div>
-
-        <div class="grid">
-            <div class="card">
-                <h2>Strict Carrier Vetting</h2>
-                <p>Every motor carrier in our network is verified for active FMCSA authority, clean safety inspection records, and direct certificate-holder insurance coverage ($100k Cargo / $1M Auto Liability minimum).</p>
-            </div>
-            <div class="card">
-                <h2>Port &amp; Regional Execution</h2>
-                <p>Based in Jacksonville, FL, we coordinate seamless port drayage through JAXPORT and high-frequency regional dry van loops across the Southeast with proactive demurrage and detention control.</p>
-            </div>
-            <div class="card">
-                <h2>Healthcare &amp; Sensitive Freight</h2>
-                <p>Dedicated chain-of-custody discipline and clean-spec trailer verification for hospital networks, clinical consumables, and time-sensitive commercial supply chains.</p>
-            </div>
-            <div class="card">
-                <h2>Single Point of Accountability</h2>
-                <p>No call-center runarounds. You work directly with dedicated operations management providing milestone check-calls, real-time exception alerts, and rapid POD turnaround.</p>
-            </div>
-        </div>
-
-        <div class="cta-box">
-            <h2>Need Capacity on an Upcoming Lane?</h2>
-            <p>Submit your origin, destination, and equipment specs for a fast, transparent rate quote.</p>
-            <a href="quote.html" class="btn">Request a Freight Quote</a>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-links">
-            <a href="aboutus.html">About Us</a>
-            <a href="authority.html">Authority &amp; Compliance</a>
-            <a href="faqpage.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-            <a href="privacy.html">Privacy Policy</a>
-        </div>
-        <p>&copy; 2026 Black Roze Logistics LLC. All rights reserved. | MC &amp; USDOT Setup Active</p>
-    </footer>
-</body>
-</html>

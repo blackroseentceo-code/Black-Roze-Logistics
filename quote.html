@@ -16,8 +16,8 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
         body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
         header { background: var(--card-bg); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; width: 100%; }
-        .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; color: var(--text-main); text-transform: uppercase; text-decoration: none; }
-        .logo span { color: var(--accent); }
+        .logo { display: inline-flex; align-items: center; text-decoration: none; line-height: 0; }
+        .logo img { height: 48px; width: auto; display: block; }
         nav { display: flex; gap: 1.5rem; }
         nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
         nav a:hover, nav a.active { color: var(--accent); }
@@ -43,7 +43,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">Black Roze <span>Logistics</span></a>
+        <a href="index.html" class="logo" aria-label="Black Roze Logistics — Home"><img src="black-roze-logo-header.png" alt="Black Roze Logistics" height="48"></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
